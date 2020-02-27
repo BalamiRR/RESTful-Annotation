@@ -7,7 +7,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-//http://localhost:8080/RESTfulJersey/rest/main
+//http://localhost:8080/RESTful-Annotation/rest/main
 @Path(value = "/main")
 public class Index {
 	
@@ -19,7 +19,7 @@ public class Index {
 		return "Method_1";
 	}
 	
-	//http://localhost:8080/RESTfulJersey/rest/main/method
+	//http://localhost:8080/RESTful-Annotation/rest/main/method
 	@GET
 	@Path(value = "/method")
 	@Produces(MediaType.TEXT_PLAIN) 
@@ -28,7 +28,7 @@ public class Index {
 		return "Method_2";
 	}
 
-	//http://localhost:8080/RESTfulJersey/rest/main/htmlMethod
+	//http://localhost:8080/RESTful-Annotation/rest/main/htmlMethod
 	@GET
 	@Path(value = "/htmlMethod")
 	@Produces("text/html") 
@@ -37,7 +37,7 @@ public class Index {
 		return "<h1>Method_3</h1>";
 	}
 	
-	//http://localhost:8080/RESTfulJersey/rest/main/htmlMethod/{mParameter}
+	//http://localhost:8080/RESTful-Annotation/rest/main/htmlMethod/{mParameter}
 	@GET
 	@Path(value = "/htmlMethod/{mParameter}")
 	@Produces(MediaType.TEXT_XML)
